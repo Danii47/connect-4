@@ -1,0 +1,57 @@
+.tablero {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(9, 117, 156);
+  padding: 0px 7px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.ganador {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.ganador .texto {
+  background: #111;
+  height: 300px;
+  width: 320px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.ganador .victoria {
+  margin: 0 auto;
+  width: fit-content;
+  border: 3px solid #eee;
+  border-radius: 50%;
+  display: flex;
+  gap: 15px;
+}
+
+.botonReinciar {
+  width: 150px;
+  padding: 5px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  background-color: rgb(59, 59, 59);
+  
+}
+
+.botonReinciar:hover {
+  background-color: rgb(80, 80, 80);
+}

@@ -1,0 +1,20 @@
+.turnoContenedor {
+  background-color: rgb(44, 44, 44);
+  margin: auto;
+  margin-top: 40px;
+  padding: 3px;
+  width: fit-content;
+  display: flex;
+  border-radius: 50%;
+}
+.circulo.seleccionado1 {
+  background-color: rgb(255, 0, 0);
+}
+
+.circulo.seleccionado2 {
+  background-color: rgb(230, 230, 0);
+}
+
+.circulo.noseleccionado {
+  background-color: fff;
+}

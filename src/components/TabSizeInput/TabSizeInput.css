@@ -1,0 +1,54 @@
+
+.inputContenedor {
+  margin-top: 15px;
+  text-align: center;
+
+}
+
+.inputTamanoTablero {
+  margin: 3px;
+  font-size: 20px;
+  text-align: center;
+  width: 65px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid black;
+  
+}
+
+/* Chrome, Safari, Edge, Opera */
+.inputTamanoTablero::-webkit-outer-spin-button,
+.inputTamanoTablero::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.inputTamanoTablero[type=number] {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.confirmarContenedor {
+  text-align: center;
+}
+
+.confirmarTamano {
+  width: 133px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: rgb(59, 59, 59);
+  
+}
+
+.confirmarTamano:hover {
+  background-color: rgb(80, 80, 80);
+}
+.inputTamanoTablero:focus {
+  outline: none;
+}
+
+
+
