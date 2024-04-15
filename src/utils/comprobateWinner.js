@@ -7,6 +7,7 @@ export function comprobateWinner(board, turn) {
   let lastValue
   for (let i = 0; i < board.length; i++) {
     timesRepeat = 0
+    lastValue = undefined
     for (let u = 0; u < board[0].length; u++) {
 
       if (board[i][u] === lastValue && board[i][u]) timesRepeat++
@@ -29,6 +30,7 @@ export function comprobateWinner(board, turn) {
   lastValue = undefined
   for (let i = 0; i < board[0].length; i++) {
     timesRepeat = 0
+    lastValue = undefined
     for (let u = 0; u < board.length; u++) {
 
       if (board[u][i] === lastValue && board[u][i]) timesRepeat++
