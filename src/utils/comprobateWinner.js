@@ -4,22 +4,29 @@ export function comprobateWinner(board, turn) {
   let win
 
   // ! COMPROBACIÓN COLUMNAS
+  let lastValue
+  for (let i = 0; i < board.length; i++) {
+    timesRepeat = 0
+    for (let u = 0; u < board[0].length; u++) {
 
-  board.forEach((column) => {
-    column.reduce((previousV, currentV) => {
-      if (!currentV) return currentV
-      if (previousV === currentV) timesRepeat++
-      else timesRepeat = 1
-      if (timesRepeat >= 4) win = true
-      return currentV
-    }, column[0])
-  })
+      if (board[i][u] === lastValue && board[i][u]) timesRepeat++
+      else {
+        lastValue = board[i][u]
+        timesRepeat = 1
+      }
+      if (timesRepeat >= 4) {
+        win = true
+        break
+      }
+    }
+    if (win) break
+  }
   if (win) return turn === 1 ? 1 : 2
 
 
   // ! COMPROBACIÓN FILAS
 
-  let lastValue
+  lastValue = undefined
   for (let i = 0; i < board[0].length; i++) {
     timesRepeat = 0
     for (let u = 0; u < board.length; u++) {
